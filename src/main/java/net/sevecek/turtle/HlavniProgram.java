@@ -15,11 +15,18 @@ public class HlavniProgram {
 
         nakresliOsmiuhelnik(zofka);
 
+        zofka.setLocation(100, 100);
+
+        nakresliKruznici(zofka);
 
 
+    }
 
-
-
+    private void nakresliKruznici(Turtle zofka) {
+        for(int i = 0; i < 18; i++) {
+            zofka.turnRight(20);
+            zofka.move(30);
+        }
     }
 
     private void nakresliOsmiuhelnik(Turtle zofka) {
